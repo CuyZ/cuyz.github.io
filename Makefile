@@ -18,6 +18,8 @@ prod-build:
 	yarn prod
 	cp -R public/css docs
 	cp CNAME docs
+	cp public/logo.png docs
+	cp public/index.html docs
 	cp public/favicon.ico docs
 	cp public/favicon-16x16.png docs
 	cp public/favicon-32x32.png docs
