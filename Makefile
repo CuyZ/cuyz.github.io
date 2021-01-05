@@ -16,7 +16,7 @@ prod-setup:
 
 prod-build:
 	yarn prod
-	cp -R public/css docs
+	cp -R public/css docs/css
 	cp CNAME docs
 	cp public/logo.png docs
 	cp public/index.html docs
