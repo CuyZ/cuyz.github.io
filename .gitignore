@@ -12,6 +12,6 @@ mix-manifest.json
 build
 coverage
 vendor
-public/css
+public/app.css
 public/img
 node_modules

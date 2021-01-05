@@ -4,7 +4,7 @@ const tailwindcss = require('tailwindcss');
 
 mix.disableNotifications();
 
-mix.postCss('resources/css/app.css', 'public/css', [
+mix.postCss('resources/css/app.css', 'public', [
     tailwindcss('./tailwind.config.js')
 ]);
 
