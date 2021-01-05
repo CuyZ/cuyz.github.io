@@ -15,6 +15,7 @@ prod-setup:
 	yarn install --non-interactive
 
 prod-build:
+	mkdir docs
 	yarn prod
 	cp CNAME docs
 	cp public/app.css docs
