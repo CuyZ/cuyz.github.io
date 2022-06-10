@@ -6,17 +6,17 @@ help:
 	@echo "  prod-build                       to create a production build"
 
 dev-setup:
-	yarn
+	npm install
 
 dev-watch:
-	yarn watch
+	npm run watch
 
 prod-setup:
-	yarn install --non-interactive
+	npm ci
 
 prod-build:
 	mkdir docs
-	yarn prod
+	npm run prod
 	cp CNAME docs
 	cp public/app.css docs
 	cp public/logo.png docs
