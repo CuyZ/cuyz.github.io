@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-    purge: [
+    content: [
         './public/**/*.html',
     ],
     darkMode: 'media', // or 'media' or 'class'
@@ -9,7 +9,7 @@ module.exports = {
         colors: {
             white: colors.white,
             black: colors.black,
-            gray: colors.coolGray,
+            gray: colors.gray,
             orange: colors.orange,
             blue: colors.blue,
             logo: {
@@ -18,9 +18,5 @@ module.exports = {
                 300: '#cc9a60',
             }
         },
-    },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
+    }
 }

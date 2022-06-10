@@ -25,5 +25,6 @@ prod-build:
 	cp public/favicon-16x16.png docs
 	cp public/favicon-32x32.png docs
 	cp public/favicon-96x96.png docs
+	node replace-css.js
 
 .PHONY: dev-setup dev-watch prod-setup prod-build

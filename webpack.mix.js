@@ -1,12 +1,11 @@
 const mix = require('laravel-mix');
 
-const tailwindcss = require('tailwindcss');
-
-mix.disableNotifications();
-
-mix.postCss('resources/css/app.css', 'public', [
-    tailwindcss('./tailwind.config.js')
-]);
+mix
+    .disableNotifications()
+    .setPublicPath('public/')
+    .postCss('resources/css/app.css', 'public', [
+        require('tailwindcss'),
+    ]);
 
 mix.browserSync({
     proxy: 'cuyz.test', // valet link
@@ -17,3 +16,7 @@ mix.browserSync({
         'public/index.html',
     ]
 });
+
+if (mix.inProduction()) {
+    mix.version();
+}
